@@ -34,12 +34,10 @@ const convertValueToNumeric = (value) => {
   return parseFloat(newStringValue);
 };
 
-const getNearestCoin = (value, coins) => {
-  const coin = coins
+const getNearestCoin = (value, coins) =>
+  coins
     .sort((a, b) => b.value - a.value)
     .find(({ value: coinValue }) => coinValue <= value);
-  return coin;
-};
 
 const calculateCoinsNeeded = (value, coins = []) => {
   let newCoins = [...coins];
