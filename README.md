@@ -15,3 +15,5 @@ The user can only process values as string literals. The value can be passed in 
      7. £0.2 -> valid
      8. £200.0 -> valid
      9. £200.402 -> invalid
+     10. Empty String -> invalid
+     11. No Value -> invalid
